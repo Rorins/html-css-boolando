@@ -13,3 +13,11 @@
 img {
   width: 30%;
 }
+.text-box {
+  width: 30%;
+  height: 80px;
+  display: inline-block;
+}
+.text-box > span {
+  display: block;
+}
