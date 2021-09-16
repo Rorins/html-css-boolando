@@ -21,3 +21,18 @@ img {
 .text-box > span {
   display: block;
 }
+.brand {
+  color: gray;
+  font-size: 10px;
+}
+.info {
+  font-weight: bold;
+}
+.price {
+  font-size: 10px;
+  color: red;
+}
+.cancelled-price {
+  color: gray;
+  font-size: 10px;
+}
