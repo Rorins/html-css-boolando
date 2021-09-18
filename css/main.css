@@ -10,15 +10,24 @@
   width: 50%;
   margin: 10px auto;
 }
-img {
+/*Card elements*/
+.card {
+  display: inline-block;
   width: 30%;
+  position: relative;
 }
+img {
+  width: 100%;
+}
+/*Text-box elements*/
 .text-box {
   width: 30%;
-  height: 80px;
+  height: 60px;
   display: inline-block;
+  line-height: normal;
 }
-.text-box > span {
+.brand,
+.info {
   display: block;
 }
 .brand {
@@ -26,6 +35,7 @@ img {
   font-size: 10px;
 }
 .info {
+  font-size: 12px;
   font-weight: bold;
 }
 .price {
@@ -35,4 +45,46 @@ img {
 .cancelled-price {
   color: gray;
   font-size: 10px;
+  text-decoration: line-through;
+}
+/* Image hover */
+.card img:last-child {
+  display: none;
+}
+.card:hover img:first-child {
+  display: none;
+}
+.card:hover img:last-child {
+  display: inline-block;
+}
+/*Heart hover*/
+.heart {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+.card:hover .heart {
+  color: red;
+}
+/*Details discount and eco */
+.details {
+  position: absolute;
+  bottom: 15px;
+  font-size: 9px;
+  color: white;
+
+  font-weight: bold;
+}
+.discount {
+  background-color: red;
+  padding: 2px;
+}
+.eco {
+  background-color: green;
+  padding: 2px;
 }
